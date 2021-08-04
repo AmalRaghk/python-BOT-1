@@ -20,7 +20,7 @@ async def on_ready():
 async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CheckFailure):
         await ctx.send('The phone no doesnt exist or it is in wrong format')    
-@bot.command(name="?mobile <no>",help="?mobile 124567891 finds details of Indian mobile numbers")
+@bot.command(name="phone",help="?mobile 124567891 finds details of International mobile numbers")
 async def phone(ctx,*,arg):
     phone=str(arg)
     phone_number = phonenumbers.parse(a+phone) 
@@ -37,7 +37,7 @@ async def phone(ctx,*,arg):
         embed.add_field(name="zone", value=zone, inline=True)
     print("done") 
     await ctx.send(embed=embed)
-@bot.command(name="?phone <no>",help="?phone 1234567812 finds country and network of International Numbers")                                                                                              
+@bot.command(name="?phone <no>",help="?phone 1234567812 finds country and network of Indian Numbers")                                                                                              
 async def mobile(ctx,*,arg):
     phono=arg
     phonono=str(phono)
