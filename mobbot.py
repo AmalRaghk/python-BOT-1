@@ -37,7 +37,7 @@ async def phone(ctx,*,arg):
         embed.add_field(name="zone", value=zone, inline=True)
     print("done") 
     await ctx.send(embed=embed)
-@bot.command(name="?phone <no>",help="?phone 1234567812 finds country and network of Indian Numbers")                                                                                              
+@bot.command(name="phone",help="?phone 1234567812 finds country and network of Indian Numbers")                                                                                              
 async def mobile(ctx,*,arg):
     phono=arg
     phonono=str(phono)
