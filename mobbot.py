@@ -20,7 +20,7 @@ async def on_ready():
 async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CheckFailure):
         await ctx.send('The phone no doesnt exist or it is in wrong format')    
-@bot.command(name="phone",help="?mobile 124567891 finds details of International mobile numbers")
+@bot.command(name="phone",help="?phone 124567891 finds details of International mobile numbers")
 async def phone(ctx,*,arg):
     phone=str(arg)
     phone_number = phonenumbers.parse(a+phone) 
