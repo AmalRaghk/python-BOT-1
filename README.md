@@ -1,6 +1,4 @@
-Here’s a starter README.md for your python-BOT-1 project, based on your repo description and context. You can copy, modify, or expand this as needed:
 
----
 
 # python-BOT-1
 
